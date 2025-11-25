@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar with Chat History -->
+        <div class="sidebar-left">
+            <div class="sidebar-header">
+                <h2>🎓 PathMentor</h2>
+                <button id="newChatBtn" class="new-chat-btn" title="New Chat">+</button>
+            </div>
+            
+            <div class="chat-history" id="chatHistory">
+                <div class="history-empty">No chats yet</div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="info-card">
+                    <h4>About</h4>
+                    <p>AI-powered learning paths to help you achieve your goals</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="chat-area">
+                <div class="chat-header">
+                    <h1 id="chatTitle">AI Learning Assistant</h1>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <h2>👋 Welcome to AI Learning Assistant!</h2>
+                        <p>Your personal learning mentor powered by AI.</p>
+                        <p style="margin-top: 12px; font-size: 0.95rem; opacity: 0.9;">What would you like to learn today?</p>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask about learning goals, study plans, or anything educational..." 
+                        rows="2"
+                    ></textarea>
+                    <button id="sendButton" class="send-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
