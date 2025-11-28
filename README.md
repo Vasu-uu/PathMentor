@@ -10,40 +10,9 @@ PathMentor is an AI-powered study assistant built using Google’s Gemini API. I
 - Persistent session history
 - Simple browser-based UI
 
-## Architecture
+## Architecture Diagram
 
-```
-User Input
-    ↓
-[Orchestrator Service]
-    ↓
-┌─────────────────────────────────────┐
-│  LLM Agent (Gemini-Powered)         │
-│  • Natural language understanding   │
-│  • Context-aware responses          │
-│  • Gemini 2.5-flash model          │
-└─────────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────┐
-│  Planning Agent                     │
-│  • Decomposes learning goals        │
-│  • Creates actionable steps         │
-│  • Structures study paths           │
-└─────────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────┐
-│  Loop Agent                         │
-│  • Iterative refinement             │
-│  • Quality validation               │
-│  • Output optimization              │
-└─────────────────────────────────────┘
-    ↓
-Response with Tools
-    ↓
-[Study Planner | Code Executor | Web Search]
-    ↓
-User
-```
+![System Diagram](./SystemDiagram.png)
 
 ## Project Structure
 
